@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amel Cantik</title>
+    <style>
+        body {
+            text-align: center;
+            background-image: url('amel.jpg');
+            font-size: 100px;
+        }
+        button {
+            background-color: rgba(227, 7, 247, 0.795);
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="submit-button">Coba Pencet</button>
+    <script>
+        document.getElementById('submit-button').addEventListener('click', function() {
+            const form = document.getElementById('registration-form');
+            
+            // Ganti nomor berikut dengan nomor Anda
+            const nomorTujuan = '6285721831812';
+            const pesan = `I LOVE YOU ADRIAS`;
+
+            // Membuka aplikasi pesan dengan nomor dan pesan yang sudah ditentukan
+            window.open(`https://wa.me/${nomorTujuan}?text=${encodeURIComponent(pesan)}`);
+        });
+    </script>
+</body>
+</html>
